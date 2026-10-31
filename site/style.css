@@ -1,19 +1,20 @@
 /* 公開ページ（サポート・プライバシー）の共通の見た目。色はアプリ（styles/app.css）の値に合わせる */
 :root {
-  --bg: #f5f3ee; --surface: #ffffff; --ink: #17202b; --ink-2: #4a5562; --ink-3: #6f7882;
-  --line: #e1ddd3; --accent: #1f4e79; --accent-soft: #e3ecf5;
+  /* ブランド（docs/brand/README.md）: 紺 #17384B・青緑 #247F79・金 #C6A264。地は白 */
+  --bg: #ffffff; --surface: #ffffff; --ink: #14212b; --ink-2: #3e4c58; --ink-3: #5b6b78;
+  --line: #e3e8ec; --accent: #17384b; --accent-soft: #eef3f6; --gold: #c6a264;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0f141a; --surface: #161d25; --ink: #e7ebef; --ink-2: #b3bcc6; --ink-3: #8c96a1;
-    --line: #26303b; --accent: #8db6e6; --accent-soft: #1d2b3b;
+    --bg: #0d1820; --surface: #13212b; --ink: #e6edf2; --ink-2: #a9b6c1; --ink-3: #8796a3;
+    --line: #22333f; --accent: #9dc3dc; --accent-soft: #1a3040;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #0f141a; --surface: #161d25; --ink: #e7ebef; --ink-2: #b3bcc6; --ink-3: #8c96a1;
-  --line: #26303b; --accent: #8db6e6; --accent-soft: #1d2b3b;
+  --bg: #0d1820; --surface: #13212b; --ink: #e6edf2; --ink-2: #a9b6c1; --ink-3: #8796a3;
+  --line: #22333f; --accent: #9dc3dc; --accent-soft: #1a3040;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -26,6 +27,8 @@ body {
 header.head { border-bottom: 1px solid var(--line); background: var(--surface); }
 header.head .wrap { display: flex; align-items: center; gap: 12px; min-height: 64px; }
 header.head img { width: 36px; height: 36px; border-radius: 9px; }
+.tagline { margin: 0 0 18px; font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif; font-size: 17px; letter-spacing: .18em; color: var(--ink-2); }
+.tagline::before { content: ""; display: inline-block; width: 22px; height: 2px; margin: 0 10px 5px 0; background: var(--gold); vertical-align: middle; }
 header.head a { color: var(--ink); text-decoration: none; font-weight: 800; }
 header.head small { display: block; color: var(--ink-3); font-size: 12px; font-weight: 500; line-height: 1.3; }
 main { padding: 28px 0 56px; }
