@@ -1,6 +1,6 @@
 # 中小M&A検定 対策 2027 — サポート
 
-iPhone アプリ「中小M&A検定 対策 2027」の公開ページ（App Store のサポート URL・プライバシーポリシー URL）。
+iPhone アプリ「中小M&A検定 対策 2027」の公開ページ（App Store のサポート URL・プライバシーポリシー URL。ページの名前は「利用規約・プライバシーポリシー」で、第1版の控え `privacy-v1.html` も置く）。
 
 - 公開先: https://yuu2811.github.io/sme-ma-kentei-support/
 - 中身の正本はアプリのリポ（非公開）の `site/`。直すときはそちらを直して、ここへ写す
