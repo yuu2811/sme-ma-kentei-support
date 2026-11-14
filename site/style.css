@@ -44,6 +44,4 @@ ol, ul { padding-left: 1.3em; }
 li { margin: 6px 0; }
 dl dt { font-weight: 700; color: var(--ink); margin-top: 16px; }
 dl dd { margin: 4px 0 0; color: var(--ink-2); }
-.links { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0; }
-.links a { display: inline-flex; align-items: center; min-height: 44px; padding: 8px 16px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); font-weight: 700; text-decoration: none; }
 footer { border-top: 1px solid var(--line); color: var(--ink-3); font-size: 13px; padding: 20px 0 40px; }
